@@ -11,15 +11,10 @@ const options = {
   }
 };
 
-
-
-
 //declaramos constantes para obtener la etiqueta desde HTML
 const h2 = document.getElementById("miTitulo");
 const imgHero = document.getElementById("hero-imagen");
 const descripcionHero = document.getElementById("descripcion-hero");
-
-
 
 //Se realiza la consulta a la api
 fetch(url, options)
@@ -53,8 +48,6 @@ fetch(url, options)
     contenedor.appendChild(linkInfo);
     });
     
-
-
   })
   .catch(err => console.error(err));
 
